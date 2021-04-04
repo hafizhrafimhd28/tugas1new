@@ -4,22 +4,55 @@
 	<title>Membuat Login Dengan CodeIgniter</title>
 </head>
 <body>
-	<h1>Membuat Login Dengan CodeIgniter <br/></h1>
+	<!-- Bootstrap Core CSS -->
+    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Isi CSS -->
+    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/custom.css" rel="stylesheet">
+    <!-- Custom Login CSS -->
+    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/customlogin.css" rel="stylesheet"> 
+    <!-- MetisMenu CSS -->
+    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="<?php echo base_url(); ?>template/backend/sbadmin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<center><h1>Hello<br/></h1>
 	<form action="<?php echo base_url('login/aksi_login'); ?>" method="post">		
-		<table>
-			<tr>
-				<td>Username</td>
-				<td><input type="text" name="username"></td>
-			</tr>
-			<tr>
-				<td>Password</td>
-				<td><input type="password" name="password"></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="submit" value="Login"></td>
-			</tr>
-		</table>
+		<div class="container">
+		<div class="row">
+    	<div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-lock"></span> <strong>LOGIN</strong>
+            </div>
+            <div class="panel-body">
+				<div class="form-group">
+                    <p class="col-sm-3">Username </p>
+					<div class="col-sm-9">
+						<input type="text" name="username" class="form-control" placeholder="Username">
+					</div>
+				<div class="form-group">
+                    <p class="col-sm-3">Password </p>
+					<div class="col-sm-9">
+						<input type="password" name="password" class="form-control" placeholder="Password">
+					</div>
+				</div>
+			<div class="form-group last">
+                 <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" name="proses" class="btn btn-success btn-sm">Sign in</button>
+                    <button type="reset" class="btn btn-default btn-sm">Reset</button>
+                </div>
+            </div>
 	</form>
+	</center>
+	 <!-- jQuery -->
+	 <script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/metisMenu/metisMenu.min.js"></script>
+	<!-- Custom Theme JavaScript -->
+	<script src="<?php echo base_url(); ?>template/backend/sbadmin/dist/js/sb-admin-2.js"></script>
 </body>
 </html>
