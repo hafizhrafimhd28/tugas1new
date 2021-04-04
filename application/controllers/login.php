@@ -2,17 +2,17 @@
  
 class Login extends CI_Controller{
  
-	function __construct(){
+	public function __construct(){
 		parent::__construct();		
 		$this->load->model('m_login');
  
 	}
  
-	function index(){
+	public function index(){
 		$this->load->view('v_login');
 	}
  
-	function aksi_login(){
+	public function aksi_login(){
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$where = array(
@@ -36,7 +36,7 @@ class Login extends CI_Controller{
 		}
 	}
  
-	function logout(){
+	public function logout(){
 		$this->session->sess_destroy();
 		redirect(base_url('login'));
 	}
