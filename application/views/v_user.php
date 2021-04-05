@@ -18,7 +18,7 @@
     <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<h1>Welcome</h1>
 	<h2>Halo, <?php echo $this->session->userdata("nama"); ?></h2>
-	<a href="<?php echo base_url('login/logout'); ?>">Logout</a>
+	<button type="submit" class="btn btn-danger btn-sm"><a href="<?php echo base_url('login/logout'); ?>">Logout</a></button>
 
 	 <!-- jQuery -->
 	 <script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/jquery/jquery.min.js"></script>

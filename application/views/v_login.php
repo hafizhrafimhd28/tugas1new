@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Membuat Login Dengan CodeIgniter</title>
+	<title>Login</title>
 </head>
 <body>
 	<!-- Bootstrap Core CSS -->
@@ -17,7 +17,7 @@
     <!-- Custom Fonts -->
     <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
-	<center><h1>Hello<br/></h1>
+	<center><h1>Silahkan Login<br/></h1>
 	<form action="<?php echo base_url('login/aksi_login'); ?>" method="post">		
 		<div class="container">
 		<div class="row">
@@ -42,8 +42,12 @@
 			<div class="form-group last">
                  <div class="col-sm-offset-3 col-sm-9">
                     <button type="submit" name="proses" class="btn btn-success btn-sm">Sign in</button>
+<<<<<<< HEAD
                     <button type="reset" class="btn btn-default btn-sm">Reset</button>
                      <button><a href="<?= base_url(); ?>register/">Register</a></button>
+=======
+                     <button type="reset" class="btn btn-default btn-sm"><a href="<?= base_url(); ?>register/">Register</a></button>
+>>>>>>> f0776ea295678fffd3bb852a198cd5b737bfa743
                 </div>
             </div>
 	</form>
