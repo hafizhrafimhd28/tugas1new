@@ -39,7 +39,7 @@
 				<div class="form-group">
 				<p class="col-sm-15">Tanggal lahir</p>
 				<div class="col-sm-15">
-						<input class="form-control" type="text" name="ttl" placeholder="ttl"> 
+						<input class="form-control" type="date" name="ttl" placeholder="ttl"> 
 				</div>
 
 				

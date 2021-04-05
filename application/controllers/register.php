@@ -21,12 +21,17 @@ function __construct()
    		$this->load->library('session');
 
 		$this->form_validation->set_rules('username', 'username','trim|required|min_length[1]|max_length[255]|is_unique[user.username]');
+		$this->form_validation->set_rules('ttl', 'ttl','trim|required|min_length[1]|max_length[255]');
+		$this->form_validation->set_rules('alamat', 'alamat','trim|required|min_length[1]|max_length[255]');
 		$this->form_validation->set_rules('password', 'password','trim|required|min_length[1]|max_length[255]');
+		
 		if ($this->form_validation->run()==true)
 	   	{
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
-			$this->m_register->register($username,$password);
+			$ttl = $this->input->post('ttl');
+			$alamat = $this->input->post('alamat');
+			$this->m_register->register($username,$password,$ttl,$alamat);
 			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
 			echo '<script>alert("Sukses! Anda berhasil melakukan register. Silahkan login untuk mengakses data.");window.location.href="'.base_url('login').'";</script>';
 		}
