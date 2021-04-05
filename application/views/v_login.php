@@ -24,7 +24,7 @@
     	<div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <span class="glyphicon glyphicon-lock"></span> <strong>LOGIN</strong>
+                <span class="glyphicon glyphicon-user"></span> <strong>LOGIN</strong>
             </div>
             <div class="panel-body">
 				<div class="form-group">
@@ -41,6 +41,7 @@
 				</div>
 			<div class="form-group last">
                  <div class="col-sm-offset-3 col-sm-9">
+				 <p></p>
                     <button type="submit" name="proses" class="btn btn-success btn-sm">Sign in</button>
                     <button class="btn btn-default btn-sm"><a href="<?= base_url(); ?>register/">Register</a></button>
 

@@ -16,44 +16,48 @@
     <link href="<?php echo base_url(); ?>template/backend/sbadmin/dist/css/sb-admin-2.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
+		
 <div class="card o-hidden border-0 shadow-lg my-5">
         <div class="card-body">
-<h1 class="text-center">Registrasi Akun</h1>
+<h1 class="text">Registrasi Akun</h1>
+<hr>
+
 <form class="form-style-1 placeholder-1" action="<?php echo base_url('register/proses'); ?>" method="post">
-<div class="container">
-		<div class="row">
+<div class="container-fluid">
+		<div class="row-center">
     	<div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <span class="glyphicon glyphicon-lock"></span> <strong>REGISTER</strong>
+                <span class="glyphicon glyphicon-pencil"></span> <strong>REGISTER</strong>
             </div>
 			<div class="panel-body">
 				<div class="form-group">
-				<p class="col-sm-3">Masukkan Username</p>
-				<div class="col-sm-10">
+				<p class="col-sm-15">Masukkan Username</p>
+				<div class="col-sm-15">
 						<input class="form-control" type="text" name="username" placeholder="Username"> 
 				</div>
 				<div class="form-group">
-				<p class="col-sm-10">Masukkan Password</p>
-				<div class="col-sm-10">      
+				<p class="col-sm-15">Masukkan Password</p>
+				<div class="col-sm-15">      
 						<input class="form-control" type="password" name="password" placeholder="Password">
 				</div>
 				<div class="form-group">
-				<p class="col-sm-3">Konfirmasi Password</p>
-				<div class="col-sm-10">
+				<p class="col-sm-15">Konfirmasi Password</p>
+				<div class="col-sm-15">
 						<input class="form-control" type="password" name="confirm_password" placeholder="Confirm Password">
 				</div>
-				<div class="form-group">
-				<div class="col-sm-8">
+				<div class="form-group last">
+				<div class="col-sm-15">
         			<div class="text-center">
-                		<button class="mtb-20 btn-primaryc plr-25" type="submit" name="submit"><h6>Register</h6></button>
+					<p> </p>
+                		<button class="btn btn-success btn-sm" type="submit" name="submit"><p>Register</p></button>
 					</div>
 				</div>
         </div>
 </form>
-	<div class="col-md-8 m-auto">
-        <h5><a href="<?= base_url(); ?>login/">Already have an account? Login</a></h5>
+<center>
+	<div class="col-md-15 m-auto">
+        <h5 class="text-center mt-20"><a href="<?= base_url(); ?>login/">Already have an account? Login</a></h5>
         <h5 class="text-center mt-20"><a href="<?= base_url(); ?>"><i class="ion-arrow-left-c"></i> Back to home</a></h5>
        </div>
 
