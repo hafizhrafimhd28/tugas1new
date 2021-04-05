@@ -1,5 +1,5 @@
 <?php 
-class Auth extends CI_Model 
+class M_register extends CI_Model 
 {
 	
 	public function __construct()
