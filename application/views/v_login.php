@@ -32,6 +32,7 @@
 					<div class="col-sm-8">
 						<input type="text" name="username" class="form-control" placeholder="Username">
 					</div>
+					
 				<div class="form-group">
                     <p class="col-sm-3">Password </p>
 					<div class="col-sm-8">
