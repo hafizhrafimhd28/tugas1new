@@ -29,12 +29,12 @@
             <div class="panel-body">
 				<div class="form-group">
                     <p class="col-sm-3">Username </p>
-					<div class="col-sm-9">
+					<div class="col-sm-8">
 						<input type="text" name="username" class="form-control" placeholder="Username">
 					</div>
 				<div class="form-group">
                     <p class="col-sm-3">Password </p>
-					<div class="col-sm-9">
+					<div class="col-sm-8">
 						<input type="password" name="password" class="form-control" placeholder="Password">
 					</div>
 				</div>
