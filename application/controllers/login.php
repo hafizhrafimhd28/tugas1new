@@ -32,7 +32,7 @@ class Login extends CI_Controller{
 			redirect(base_url("user"));
  
 		}else{
-			echo "Username dan password salah !";
+			echo '<script>alert("Username atau Password Salah.");window.location.href="'.base_url('login').'";</script>';
 		}
 	}
  

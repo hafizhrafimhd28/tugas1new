@@ -28,7 +28,7 @@ function __construct()
 			$password = $this->input->post('password');
 			$this->m_register->register($username,$password);
 			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
-			redirect('login');
+			echo '<script>alert("Sukses! Anda berhasil melakukan register. Silahkan login untuk mengakses data.");window.location.href="'.base_url('login').'";</script>';
 		}
 		else
 		{
