@@ -30,17 +30,19 @@
             </div>
 			<div class="panel-body">
 				<div class="form-group">
-				<div class="col-sm-8">
-						<p>Masukkan Username</p>
-						<input class="mt-20" type="text" name="username" placeholder="Username"> 
+				<p class="col-sm-3">Masukkan Username</p>
+				<div class="col-sm-10">
+						<input class="form-control" type="text" name="username" placeholder="Username"> 
 				</div>
 				<div class="form-group">
-				<div class="col-sm-8">      
-						<input class="mt-20" type="password" name="password" placeholder="Password">
+				<p class="col-sm-10">Masukkan Password</p>
+				<div class="col-sm-10">      
+						<input class="form-control" type="password" name="password" placeholder="Password">
 				</div>
 				<div class="form-group">
-				<div class="col-sm-8">
-						<input class="mt-20" type="password" name="confirm_password" placeholder="Confirm Password">
+				<p class="col-sm-3">Konfirmasi Password</p>
+				<div class="col-sm-10">
+						<input class="form-control" type="password" name="confirm_password" placeholder="Confirm Password">
 				</div>
 				<div class="form-group">
 				<div class="col-sm-8">
