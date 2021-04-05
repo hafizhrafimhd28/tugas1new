@@ -42,6 +42,7 @@
                  <div class="col-sm-offset-3 col-sm-9">
                     <button type="submit" name="proses" class="btn btn-success btn-sm">Sign in</button>
                     <button type="reset" class="btn btn-default btn-sm">Reset</button>
+                     <button><a href="<?= base_url(); ?>v_register/">Register</a></button>
                 </div>
             </div>
 	</form>
