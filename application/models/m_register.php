@@ -11,7 +11,7 @@ class M_register extends CI_Model
 	{
 		$data_user = array(
 			'username'=>$username,
-			'password'=>password_hash($password,PASSWORD_DEFAULT),
+			'password'=>md5($password),
 		);
 		$this->db->insert('user',$data_user);
 	}
