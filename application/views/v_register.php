@@ -36,6 +36,21 @@
 				<div class="col-sm-15">
 						<input class="form-control" type="text" name="username" placeholder="Username"> 
 				</div>
+
+<div class="panel-body">
+				<div class="form-group">
+				<p class="col-sm-15">Tanggal lahir</p>
+				<div class="col-sm-15">
+						<input class="form-control" type="text" name="ttl" placeholder="ttl"> 
+				</div>
+
+				<div class="panel-body">
+				<div class="form-group">
+				<p class="col-sm-15">Alamat</p>
+				<div class="col-sm-15">
+						<input class="form-control" type="text" name="alamat" placeholder="Alamat"> 
+				</div>
+
 				<div class="form-group">
 				<p class="col-sm-15">Masukkan Password</p>
 				<div class="col-sm-15">      
