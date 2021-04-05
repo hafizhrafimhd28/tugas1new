@@ -33,7 +33,7 @@ function __construct()
 		else
 		{
 			$this->session->set_flashdata('error', validation_errors());
-			redirect('register');
+			echo '<script>alert("Data yang anda Masukkan Tidak Valid! Silahkan Ulangi Registrasi Anda");window.location.href="'.base_url('register').'";</script>';
 		}
 	}
 }
