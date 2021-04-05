@@ -1,6 +1,44 @@
-<!DOCTYPE html>
-<html>
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>  
 <head>
+<<<<<<< HEAD
+<meta charset="UTF-8">
+<title>
+  Pendaftaran Akun
+</title>
+</head>
+<body>
+  <h2>Pendaftaran Akun</h2>
+
+  <?php echo form_open('v_register');?>
+  <p>Username:</p>
+  <p>
+  <input type="text" name="username" value="<?php echo set_value('username'); ?>"/> 
+  </p>
+  <p> <?php echo form_error('username'); ?> </p>
+
+  <p>Password:</p>
+  <p>
+  <input type="password" name="password" value="<?php echo set_value('password'); ?>"/>
+  </p>
+  <p> <?php echo form_error('password'); ?> </p>
+
+  <p>Password Confirm:</p>
+  <p>
+  <input type="password" name="password_conf" value="<?php echo set_value('password_conf'); ?>"/>
+  </p>
+  <p> <?php echo form_error('password_conf'); ?> </p>
+
+  <p>
+  <input type="submit" name="btnSubmit" value="Daftar" />
+  </p>
+
+  <?php echo form_close();?>
+
+  <p>
+  Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini..'); ?>
+  </p>
+=======
 	<title>Registrasi Akun</title>
 </head>
 <body>
@@ -65,5 +103,6 @@
 	<script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/metisMenu/metisMenu.min.js"></script>
 	<!-- Custom Theme JavaScript -->
 	<script src="<?php echo base_url(); ?>template/backend/sbadmin/dist/js/sb-admin-2.js"></script>
+>>>>>>> f0776ea295678fffd3bb852a198cd5b737bfa743
 </body>
 </html>

@@ -1,5 +1,9 @@
 <?php 
+<<<<<<< HEAD
+class m_register extends CI_Model 
+=======
 class M_register extends CI_Model 
+>>>>>>> f0776ea295678fffd3bb852a198cd5b737bfa743
 {
 	
 	public function __construct()
