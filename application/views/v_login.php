@@ -42,12 +42,8 @@
 			<div class="form-group last">
                  <div class="col-sm-offset-3 col-sm-9">
                     <button type="submit" name="proses" class="btn btn-success btn-sm">Sign in</button>
-<<<<<<< HEAD
-                    <button type="reset" class="btn btn-default btn-sm">Reset</button>
-                     <button><a href="<?= base_url(); ?>register/">Register</a></button>
-=======
                      <button type="reset" class="btn btn-default btn-sm"><a href="<?= base_url(); ?>register/">Register</a></button>
->>>>>>> f0776ea295678fffd3bb852a198cd5b737bfa743
+
                 </div>
             </div>
 	</form>

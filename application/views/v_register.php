@@ -1,7 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>  
 <head>
-=======
 	<title>Registrasi Akun</title>
 </head>
 <body>
@@ -66,6 +65,5 @@
 	<script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/metisMenu/metisMenu.min.js"></script>
 	<!-- Custom Theme JavaScript -->
 	<script src="<?php echo base_url(); ?>template/backend/sbadmin/dist/js/sb-admin-2.js"></script>
->>>>>>> f0776ea295678fffd3bb852a198cd5b737bfa743
 </body>
 </html>
