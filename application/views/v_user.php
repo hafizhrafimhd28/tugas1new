@@ -48,7 +48,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    Selamat datang di halaman dashboard.
+                    Selamat datang di Bumbumbum
                 </div>
             </div>
         </div>
