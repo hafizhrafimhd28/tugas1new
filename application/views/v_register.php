@@ -1,36 +1,41 @@
-<!DOCTYPE html>
-<html>
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>  
 <head>
-	<title>Membuat Login Dengan CodeIgniter</title>
+<meta charset="UTF-8">
+<title>
+  Pendaftaran Akun
+</title>
 </head>
 <body>
-<div class="card o-hidden border-0 shadow-lg my-5">
-        <div class="card-body">
-<h3 class="text-center">Registrasi</h3>
-<br><hr>
-<form class="form-style-1 placeholder-1" action="" method="post">
+  <h2>Pendaftaran Akun</h2>
 
+  <?php echo form_open('v_register');?>
+  <p>Username:</p>
+  <p>
+  <input type="text" name="username" value="<?php echo set_value('username'); ?>"/> 
+  </p>
+  <p> <?php echo form_error('username'); ?> </p>
 
-	<input class="mt-20" type="text" name="username" placeholder="Username" value="<?= set_value('username'); ?>">
-	<?= form_error('username','<small class="text-danger">', '</small>'); ?>
+  <p>Password:</p>
+  <p>
+  <input type="password" name="password" value="<?php echo set_value('password'); ?>"/>
+  </p>
+  <p> <?php echo form_error('password'); ?> </p>
 
-        
-	<input class="mt-20" type="password" name="password" placeholder="Password">
-	<?= form_error('password','<small class="text-danger">', '</small>'); ?>
+  <p>Password Confirm:</p>
+  <p>
+  <input type="password" name="password_conf" value="<?php echo set_value('password_conf'); ?>"/>
+  </p>
+  <p> <?php echo form_error('password_conf'); ?> </p>
 
-	<input class="mt-20" type="password" name="confirm_password" placeholder="Confirm Password">
-	<?= form_error('confirm_password','<small class="text-danger">', '</small>'); ?>
+  <p>
+  <input type="submit" name="btnSubmit" value="Daftar" />
+  </p>
 
-        <div class="text-center">
-                <button class="mtb-20 btn-primaryc plr-25" type="submit" name="submit"><h6>Register</h6></button>
-        </div>
-</form>
-	<div class="col-md-8 m-auto">
-        <h5><a href="<?= base_url(); ?>auth/login/">Already have an account? Login</a></h5>
-        <h5 class="text-center mt-20"><a href="<?= base_url(); ?>"><i class="ion-arrow-left-c"></i> Back to home</a></h5>
-       </div>
+  <?php echo form_close();?>
 
-</div>
-</div>
+  <p>
+  Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini..'); ?>
+  </p>
 </body>
 </html>
