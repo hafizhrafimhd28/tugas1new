@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>Welcome</title>
 </head>
 <body>
 	<!-- Bootstrap Core CSS -->
 	<link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+=======
+=======
+	<title>Registrasi Akun</title>
+</head>
+<body>
+<!-- Bootstrap Core CSS -->
+<link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> 41f39bbaf519da3b79689c336685d04db1a7ed4b
     <!-- Custom Isi CSS -->
     <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/custom.css" rel="stylesheet">
     <!-- Custom Login CSS -->

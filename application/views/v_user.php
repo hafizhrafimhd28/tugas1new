@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
 </head>
 <body>
-	<!-- Bootstrap Core CSS -->
-	<link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Isi CSS -->
-    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/custom.css" rel="stylesheet">
-    <!-- Custom Login CSS -->
-    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/css/customlogin.css" rel="stylesheet"> 
-    <!-- MetisMenu CSS -->
-    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="<?php echo base_url(); ?>template/backend/sbadmin/dist/css/sb-admin-2.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<h1>Welcome</h1>
-	<h2>Halo, <?php echo $this->session->userdata("nama"); ?></h2>
-	<button type="submit" class="btn btn-danger btn-sm"><a href="<?php echo base_url('login/logout'); ?>">Logout</a></button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bumbumbum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url('login/logout'); ?>">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-	 <!-- jQuery -->
-	 <script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/jquery/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Metis Menu Plugin JavaScript -->
-<script src="<?php echo base_url(); ?>template/backend/sbadmin/vendor/metisMenu/metisMenu.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="<?php echo base_url(); ?>template/backend/sbadmin/dist/js/sb-admin-2.js"></script>
+    <div class="container mt-5">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    Selamat datang di halaman dashboard.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 </body>
-</html>
+</html> 

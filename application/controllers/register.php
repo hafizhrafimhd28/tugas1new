@@ -16,21 +16,24 @@ function __construct()
 	}
 
 	public function proses()
-	{
-		$this->form_validation->set_rules('username', 'username','trim|required|min_length[1]|max_length[255]|is_unique[tb_user.username]');
+	{	
+		$this->load->library('form_validation');
+   		$this->load->library('session');
+
+		$this->form_validation->set_rules('username', 'username','trim|required|min_length[1]|max_length[255]|is_unique[user.username]');
 		$this->form_validation->set_rules('password', 'password','trim|required|min_length[1]|max_length[255]');
 		if ($this->form_validation->run()==true)
 	   	{
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
-			$this->m_register->register($username,$password,$nama);
+			$this->m_register->register($username,$password);
 			$this->session->set_flashdata('success_register','Proses Pendaftaran User Berhasil');
-			redirect('v_login');
+			redirect('login');
 		}
 		else
 		{
 			$this->session->set_flashdata('error', validation_errors());
-			redirect('v_register');
+			redirect('register');
 		}
 	}
 }

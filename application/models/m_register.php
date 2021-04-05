@@ -1,7 +1,5 @@
 <?php 
-<<<<<<< HEAD
-class m_register extends CI_Model 
-=======
+
 class M_register extends CI_Model 
 >>>>>>> f0776ea295678fffd3bb852a198cd5b737bfa743
 {
@@ -15,7 +13,7 @@ class M_register extends CI_Model
 	{
 		$data_user = array(
 			'username'=>$username,
-			'password'=>password_hash($password,PASSWORD_DEFAULT),
+			'password'=>md5($password),
 		);
 		$this->db->insert('user',$data_user);
 	}
