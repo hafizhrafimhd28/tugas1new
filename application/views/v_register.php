@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Membuat Login Dengan CodeIgniter</title>
+	<title>Registrasi Akun</title>
 </head>
 <body>
 <!-- Bootstrap Core CSS -->
@@ -19,8 +19,7 @@
 	
 <div class="card o-hidden border-0 shadow-lg my-5">
         <div class="card-body">
-<h3 class="text-center">Registrasi</h3>
-<br><hr>
+<h1 class="text-center">Registrasi Akun</h1>
 <form class="form-style-1 placeholder-1" action="<?php echo base_url('register/proses'); ?>" method="post">
 <div class="container">
 		<div class="row">
@@ -32,6 +31,7 @@
 			<div class="panel-body">
 				<div class="form-group">
 				<div class="col-sm-8">
+						<p>Masukkan Username</p>
 						<input class="mt-20" type="text" name="username" placeholder="Username"> 
 				</div>
 				<div class="form-group">

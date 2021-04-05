@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Membuat Login Dengan CodeIgniter</title>
+	<title>Login</title>
 </head>
 <body>
 	<!-- Bootstrap Core CSS -->
@@ -17,7 +17,7 @@
     <!-- Custom Fonts -->
     <link href="<?php echo base_url(); ?>template/backend/sbadmin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
-	<center><h1>Hello<br/></h1>
+	<center><h1>Silahkan Login<br/></h1>
 	<form action="<?php echo base_url('login/aksi_login'); ?>" method="post">		
 		<div class="container">
 		<div class="row">
